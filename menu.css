@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+  background-color: rgb(210, 0, 0);
+}
+
+.header h1 {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 40px;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.order-name {
+  border-bottom: .5px gray solid;
+  padding: 45px 40px 45px 40px;
+}
+
+.order-name label {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.order-name input {
+  border: none;
+  border-bottom: 1.5px black solid;
+  width: 250px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.order-name input:focus {
+  outline: none;
+}
+
+.menu-specials {
+  margin-top: 20px;
+  border-bottom: .5px gray solid;
+}
+
+h3 {
+  margin: 40px 0px 20px 40px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+}
+
+.specials-list {
+  width: 100%;
+}
+  
+.menu-specials ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding: 0px 30px 30px 30px;
+}
+  
+.menu-specials li {
+  text-align: left;
+  margin: 12px;
+  background-color: white;
+  border: gray solid 0.5px;
+}
+  
+.menu-specials img {
+  font-size: 13px;
+  width: 100%;
+  aspect-ratio: 4/ 3;
+  object-fit: cover;
+  font-display: block;
+}
+  
+.menu-specials p {
+  text-align: center;
+  padding: 10px;
+  margin: 0px; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+  
+.pizza-size {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+.pizza-quantity {
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.pizza-quantity label {
+  padding-right: 5px;
+}
+
+.custom-pizza {
+  margin-top: 40px;
+  border-bottom: .5px grey solid;
+  margin-bottom: 40px;
+}
+
+.pizza-img {
+  width: 20%;
+  min-width: 220px;
+  margin: 15px 40px 20px 50px;
+}
+
+.pizza-img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.custom-content {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 40px 20px 20px;
+  padding-bottom: 10px;
+}
+
+.custom-box {
+  margin: 15px 40px 20px 40px;
+  height: fit-content;
+  border: .5px grey solid;
+}
+
+.custom-box legend {
+  background-color: rgb(210, 0, 0);
+  padding: 10px 15px 10px 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  color: white;
+}
+
+.custom-size {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0px 0px 0px;
+}
+
+.custom-size label {
+  width: max-content;
+  padding: 0px 25px 15px 15px;
+}
+
+.custom-toppings {
+  column-count: 2;
+  padding: 0;
+  margin: 25px 25px 0px 30px;
+}
+  
+.custom-toppings li {
+  list-style-type: none;
+  padding: 0px 0px 25px 0px;
+  margin-right: 0px;
+  width: max-content;
+}
+
+.custom-toppings label {
+  width: max-content;
+  padding: 0px 15px 0px 0px;
+}
+
+.custom-quantity {
+  text-align: center;
+  padding: 15px;
+}
+
+.additional-items {
+  margin-top: 20px;
+  border-bottom: .5px gray solid;
+}
+
+.sides-list {
+  width: 100%;
+}
+  
+.additional-items ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 263px));
+  grid-gap: 1rem;
+  padding: 0px 30px 30px 30px;
+}
+  
+.additional-items li {
+  text-align: left;
+  margin: 12px;
+  background-color: white;
+  border: gray solid 0.5px;
+}
+  
+.additional-items img {
+  font-size: 13px;
+  width: 100%;
+  aspect-ratio: 4/ 3;
+  object-fit: cover;
+  font-display: block;
+}
+  
+.additional-items p {
+  text-align: center;
+  padding: 10px;
+  margin: 0px; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+  
+.side-size {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+.side-quantity {
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.side-quantity label {
+  padding-right: 5px;
+}
+
+.submit-btn {
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+}
+
+.submit-btn input {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  border: 0;
+  padding: 18px 55px 18px 55px;
+  background: rgb(210, 0, 0);
+  box-shadow: 0px 2px 5px rgba(0,0,0,.2);
+  font-size: 22px;
+  cursor: pointer;
+  outline: none;
+  color: white; 
+  letter-spacing: 1px;
+  font-variant: small-caps;
+}
+
+.submit-btn input:hover {
+  background: rgb(170, 0, 0);
+}

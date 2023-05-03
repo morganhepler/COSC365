@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu</title>
+  <link href="menu.css" type="text/css" rel="stylesheet"/> 
+</head>
+<body>
+  <div class="header">
+    <h1>Domo's Menu</h1>
+  </div>
+  <form action="confirmation.php" method="post">
+    <div class="order-name">
+      <label>Order Name: </label>
+      <input type="text" name="name"/>
+    </div>
+    <div class="menu-specials">
+      <h3>Specialty Pizzas</h3>
+      <div class="specials-list">
+        <ul>
+          <li>
+            <img src="images/BuffaloChicken.jpeg" />
+            <p>Buffalo Chicken</p>
+            <div class="pizza-size">
+              <label><input type="radio" name="buff-chick-size" value="Small">S</label>
+              <label><input type="radio" name="buff-chick-size" value="Medium">M</label>
+              <label><input type="radio" name="buff-chick-size" value="Large">L</label>
+            </div>
+            <div class="pizza-quantity">
+              <label>Quantity:</label>
+              <select name="buff-chick-quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <img src="images/Hawaiian.jpeg" />
+            <p>Hawaiian</p>
+            <div class="pizza-size">
+              <label><input type="radio" name="hawaii-size" value="Small">S</label>
+              <label><input type="radio" name="hawaii-size" value="Medium">M</label>
+              <label><input type="radio" name="hawaii-size" value="Large">L</label>
+            </div>
+            <div class="pizza-quantity">
+              <label>Quantity:</label>
+              <select name="hawaii-quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <img src="images/BBQChicken.jpeg" />
+            <p>BBQ Chicken</p>
+            <div class="pizza-size">
+              <label><input type="radio" name="bbq-chick-size" value="Small">S</label>
+              <label><input type="radio" name="bbq-chick-size" value="Medium">M</label>
+              <label><input type="radio" name="bbq-chick-size" value="Large">L</label>
+            </div>
+            <div class="pizza-quantity">
+              <label>Quantity:</label>
+              <select name="bbq-chick-quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <img src="images/Deluxe.jpeg" />
+            <p>Deluxe</p>
+            <div class="pizza-size">
+              <label><input type="radio" name="deluxe-size" value="Small">S</label>
+              <label><input type="radio" name="deluxe-size" value="Medium">M</label>
+              <label><input type="radio" name="deluxe-size" value="Large">L</label>
+            </div>
+            <div class="pizza-quantity">
+              <label>Quantity:</label>
+              <select name="deluxe-quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <img src="images/ChickenBaconRanch.jpeg" />
+            <p>Chicken Bacon Ranch</p>
+            <div class="pizza-size">
+              <label><input type="radio" name="chick-bacon-size" value="Small">S</label>
+              <label><input type="radio" name="chick-bacon-size" value="Medium">M</label>
+              <label><input type="radio" name="chick-bacon-size" value="Large">L</label>
+            </div>
+            <div class="pizza-quantity">
+              <label>Quantity:</label>
+              <select name="chick-bacon-quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="custom-pizza">
+      <h3>Customize a Pizza</h3>
+      <div class="custom-content">
+        <div class="pizza-img">
+          <img src="images/CustomPizza.png" />
+        </div>
+        <div class="custom-box">
+          <legend>Size</legend>
+          <div class="custom-size">
+            <label><input type="radio" name="pizza-size" value="Small"> Small</label>
+            <label><input type="radio" name="pizza-size" value="Medium"> Medium</label>
+            <label><input type="radio" name="pizza-size" value="Large"> Large</label>
+          </div>
+        </div>
+        <div class="custom-box">
+          <legend>Toppings</legend>
+          <ul class="custom-toppings">
+            <li><label><input type="checkbox" name="pepperoni" value="Pepperoni"> Pepperoni</label></li>
+            <li><label><input type="checkbox" name="bacon" value="Bacon"> Bacon</label></li>
+            <li><label><input type="checkbox" name="sausage" value="Sausage"> Sausage</label></li>
+            <li><label><input type="checkbox" name="chicken" value="Chicken"> Chicken</label></li>
+            <li><label><input type="checkbox" name="pineapple" value="Pineapple"> Pineapple</label></li>
+            <li><label><input type="checkbox" name="onions" value="Onions"> Onions</label></li>
+            <li><label><input type="checkbox" name="mushrooms" value="Mushrooms"> Peppers</label></li>
+          </ul>
+        </div>
+        <div class="custom-box">
+          <legend>Quantity</legend>
+          <div class="custom-quantity">
+            <select name="quantity">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="additional-items">
+      <h3>Additional Menu Items</h3>
+      <div class="sides-list">
+        <ul>
+          <li>
+            <img src="images/GarlicKnots.webp" />
+            <p>Garlic Knots</p>
+            <div class="side-size">
+              <label><input type="radio" name="knots-size" value="Small"> S</label>
+              <label><input type="radio" name="knots-size" value="Large"> L</label>
+            </div>
+            <div class="side-quantity">
+              <label>Quantity:</label>
+              <select name="knots-quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <img src="images/Breadsticks.webp" />
+            <p>Breadsticks</p>
+            <div class="side-size">
+              <label><input type="radio" name="breadsticks-size" value="Small"> S</label>
+              <label><input type="radio" name="breadsticks-size" value="Large"> L</label>
+            </div>
+            <div class="side-quantity">
+              <label>Quantity:</label>
+              <select name="breadsticks-quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <img src="images/Cheesesticks.webp" />
+            <p>Cheesesticks</p>
+            <div class="side-size">
+              <label><input type="radio" name="cheese-size" value="Small"> S</label>
+              <label><input type="radio" name="cheese-size" value="Large"> L</label>
+            </div>
+            <div class="side-quantity">
+              <label>Quantity:</label>
+              <select name="cheese-quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="submit-btn">
+      <input type="submit" value="Submit!"/>
+    </div>
+  </form>
+</body>
+</html>
